@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import './Formulario'
+import './Formulario';
 import Formulario from './Formulario';
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Entrega de TP1</h1>
+      <h1>Registrate</h1>
         <Formulario filas={filas} />
     </div>
   );
