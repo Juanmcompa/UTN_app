@@ -1,20 +1,18 @@
+import Home from "./Components/Home"
+import Menu from "./Components/Menu"
+import Login from "./Components/Login"
+import Registro from "./Components/Registro"
 import './App.css';
-import './Formulario';
-import Formulario from './Formulario';
 
 function App() {
-  const filas = [ {label:'Nombre', type:'text'},
-                  {label:'Apellido', type:'text'},
-                  {label:'Email', type:'email'},
-                  {label:'Télefono', type:'tel'},
-                  {label:'Password', type:'password'},
-                  {label:'Confirmar Password', type:'password'}
-                ]
+  const subtitulo="Test"
 
   return (
     <div className="App">
-      <h1>Registrate</h1>
-        <Formulario filas={filas} />
+        <Menu />
+        <Home titulo="TituloHome" subtitulo={subtitulo}/>
+        <Login />
+        <Registro />
     </div>
   );
 }
