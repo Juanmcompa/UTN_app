@@ -7,17 +7,19 @@ class Producto extends Component {
    }
 
 comprar =()=>{
-    alert("Gracias por su compra");
+   alert("Gracias por su compra");
 }
 
    render(){
 
         return(
-            <div>
-                <div>ID: {this.props.producto.id}</div>
-                <div>NOMBRE: {this.props.producto.name}</div>
-                <div>PRECIO: {this.props.producto.price}</div>
-                <button class="btn"  onClick={this.comprar}>Comprar</button>
+            <div class="card">
+                <div class="prodname prod">{this.props.producto.name}</div>
+                <div class="proddesc prod">{this.props.producto.desc}</div>
+                <div class="prodprice prod">PRECIO: ${this.props.producto.price}</div>
+                <div class="prodsku prod">SKU: {this.props.producto.sku}</div>
+                <div class="prodcant prod">CANTIDAD: {this.props.producto.cant}</div>
+                <button class=""  onClick={this.comprar}>Comprar</button>
             </div>
         )
    }
