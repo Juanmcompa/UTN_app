@@ -7,7 +7,7 @@ class Login extends React.Component {
    }*/
    render(){
         return(
-            <form class="Registro">
+            <form class="Login">
             <div class="container">
               <h1>Login</h1>
               <p>Ingresá ahora</p>              

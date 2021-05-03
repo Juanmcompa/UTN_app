@@ -1,9 +1,8 @@
 import React from "react"
 import '../App.css'
 import Producto from './Producto'
-import Filtros from './Filtros'
 
-class Home extends React.Component {
+class Catalogo extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -28,7 +27,7 @@ class Home extends React.Component {
                 }
                 
             ],
-            titulo:"Titulo original"
+            titulo:"Home"
         }
    }
    
@@ -50,7 +49,7 @@ class Home extends React.Component {
    })
 }
 
-cambiarTitulo = ()=>{
+cambiartitulo = ()=>{
     this.setState({
      titulo:"Titulo modificado"
     })
@@ -61,14 +60,12 @@ cambiarTitulo = ()=>{
         return(
 
             <div>
-
-                <div>Home</div>
-                <div>Titulo: {this.state.titulo}</div>
+                <div>Catalogo</div>
 
                
                 {this.state.productos.map(producto=>
                 <Producto producto={producto}/>)}
-                <Filtros clickCambiarTitulo={this.cambiarTitulo} clickFiltrarProduto={this.filtrarProducto} />
+            <button class="btn" onClick={this.filtrarProducto}>Filtrar +$199</button>
 
             </div>
             
@@ -76,4 +73,4 @@ cambiarTitulo = ()=>{
     }
 }
 
-export default Home;
+export default Catalogo;

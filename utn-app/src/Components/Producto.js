@@ -10,10 +10,12 @@ class Producto extends Component {
 
         return(
             <div>
-                
+                <div>ID: {this.props.producto.id}</div>
+                <div>NOMBRE: {this.props.producto.name}</div>
+                <div>PRECIO: {this.props.producto.price}</div>
             </div>
         )
    }
 }
 
-export default Home;
+export default Producto;
