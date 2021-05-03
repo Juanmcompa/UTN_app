@@ -6,6 +6,10 @@ class Producto extends Component {
       super(props)
    }
 
+comprar =()=>{
+    alert("Gracias por su compra");
+}
+
    render(){
 
         return(
@@ -13,6 +17,7 @@ class Producto extends Component {
                 <div>ID: {this.props.producto.id}</div>
                 <div>NOMBRE: {this.props.producto.name}</div>
                 <div>PRECIO: {this.props.producto.price}</div>
+                <button class="btn"  onClick={this.comprar}>Comprar</button>
             </div>
         )
    }

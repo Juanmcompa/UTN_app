@@ -12,7 +12,7 @@ class Home extends React.Component {
             <li><a href="#">Login</a></li>
             <li><a href="#">Register</a></li>
             <li><a href="#">Productos</a></li>
-            <li id="register"><a class="active" href="#about">Register</a></li>
+            <li id="register"><a class="active" href="#">Register</a></li>
           </ul>
           </nav>
         )
