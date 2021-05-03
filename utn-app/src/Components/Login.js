@@ -5,9 +5,14 @@ class Login extends React.Component {
    /*constructor(){
        console.log("Se genera el Home")
    }*/
+
+   logeo =()=>{
+    alert("Te logeaste!");
+ }
+
    render(){
         return(
-            <form class="Registro">
+            <form class="Login">
             <div class="container">
               <h1>Login</h1>
               <p>Ingresá ahora</p>              
@@ -19,7 +24,7 @@ class Login extends React.Component {
               <label for="psw"><b>Contraseña</b></label>
               <input type="password" placeholder="Ingrese Contraseña" name="psw" id="psw" required/>
                 
-            <button type="submit" class="loginbtn btn">Login</button>
+            <button type="submit" onClick={this.logeo} class="loginbtn btn">Login</button>
             </div>
             </div>
           </form> 

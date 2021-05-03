@@ -5,6 +5,11 @@ class Registro extends React.Component {
    /*constructor(){
        console.log("Se genera el Home")
    }*/
+
+   logeo =()=>{
+    alert("Te registraste!");
+ }
+
    render(){
         return(
             <form class="Registro">
@@ -32,7 +37,7 @@ class Registro extends React.Component {
               <input type="password" placeholder="Confirme Contraseña" name="psw-repeat" id="psw-repeat" required/>
                         
               <p>Al completar este formulario usted acepta nuestro <a href="#">Términos y Condiciones</a>.</p>
-              <button type="submit" class="registerbtn btn">Registrarse</button>
+              <button type="submit" onClick={this.registro} class="registerbtn btn">Registrarse</button>
             </div>
             </div>
             

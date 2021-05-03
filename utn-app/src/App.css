@@ -76,6 +76,8 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  font-size: 0.5em;
+  font-weight: 600;
 }
 
 .Menu li {
@@ -87,12 +89,17 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px;
   text-decoration: none;
 }
 
 .Menu a:hover {
   background-color: #111;
+}
+
+#register {
+  float: right;
+  background-color: green;
 }
 
 /*----REGISTRO----------------------------------*/
@@ -122,4 +129,77 @@
 
 .rellenar input {
   text-align: center;
+}
+
+
+/*-----LOGIN---------------------------------*/
+.Login {
+  background-color: green;
+  color: aliceblue;
+  text-align: center;
+  padding: 25px;
+}
+
+
+.Login a{
+  color: aqua;
+  text-decoration: none;
+}
+
+.Login p{
+  font-size: 0.8em;
+}
+
+/*----PRODUCTOS----------------------------*/
+.card {
+  width: 100%;
+  max-width: 150px;
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.prodname {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #282c34;
+  text-transform: uppercase;
+}
+
+.proddesc {
+  font-size: 0.4em;
+}
+
+.prodprice {
+  font-size: 0.6em;
+  font-weight: 700;
+  color: red;
+}
+
+.prodsku {
+  font-size: 0.3em;
+  color: grey;
+}
+
+.prodcant {
+  font-size: 0.4em;
+}
+
+.prod {
+  padding: 2px;
+}
+
+.orden {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -9,10 +9,10 @@ class Home extends React.Component {
         return(
             <nav class="Menu">
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Registro</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li id="register"><a class="active" href="#">Register</a></li>
             <li><a href="#">Productos</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
           </nav>
         )
