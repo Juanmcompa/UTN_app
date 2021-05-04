@@ -1,7 +1,8 @@
-import Home from "./Components/Home"
+import Home from "./Pages/Home"
 import Menu from "./Components/Menu"
-import Login from "./Components/Login"
-import Registro from "./Components/Registro"
+import Login from "./Pages/Login"
+import Detalle from "./Pages/Detalle"
+import Registro from "./Pages/Registro"
 import './App.css';
 import {Link, Router} from 'react-router';
 import { BrowserRouter,Route } from 'react-router-dom';
@@ -17,7 +18,8 @@ function App() {
       <Route path="/" component={Home} exact />
       <Route path="/alta" component={Registro} exact />
       <Route path="/log" component={Login} exact />
-      ¿Podría meter un footer?
+      <Route path="/producto/:id" component={Detalle} exact />
+      ¿Podría meter un footer, no?
     </BrowserRouter>
 
 

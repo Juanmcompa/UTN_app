@@ -11,9 +11,8 @@ class Home extends React.Component {
             <nav class="Menu">
             <ul>
             <li><Link to="/alta">Registro</Link></li>
-            <li id="register"><Link to="/">Ir al home</Link></li>
+            <li id="register"><Link to="/">Ver Productos</Link></li>
             <li><Link to="/log">Login</Link></li>
-            <li><Link to="/detalle">Detalle</Link></li>
           </ul>
           </nav>
         )
