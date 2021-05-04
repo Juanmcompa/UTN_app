@@ -1,5 +1,6 @@
 import React from "react"
 import '../App.css'
+import {Link} from "react-router-dom"
 
 class Home extends React.Component {
    /*constructor(){
@@ -9,10 +10,10 @@ class Home extends React.Component {
         return(
             <nav class="Menu">
             <ul>
-            <li><a href="#">Register</a></li>
-            <li id="register"><a class="active" href="#">Register</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Login</a></li>
+            <li><Link to="/alta">Registro</Link></li>
+            <li id="register"><Link to="/">Ir al home</Link></li>
+            <li><Link to="/log">Login</Link></li>
+            <li><Link to="/detalle">Detalle</Link></li>
           </ul>
           </nav>
         )

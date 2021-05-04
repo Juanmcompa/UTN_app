@@ -1,34 +1,35 @@
-import React,{Component} from "react"
+import React,{Component,useState} from "react"
 import '../App.css'
+function Producto(props){
+   const {producto,titulo} = props
+   const [mensaje,setMensaje]=useState("")
 
-class Producto extends Component {
-   constructor(props){
-      super(props)
+   const comprar = ()=>{
+      if(props.producto.stock-1!==0){
+         setMensaje("No hay stock")
+      }else{
+         setMensaje("Gracias por su compra")
+      }
    }
 
-comprar =()=>{
-   alert("Veamos el detalle!");
+   return(
+      <div class="card">
+         {titulo}
+          <div class="prodid prod">ID: {producto.id}</div>
+          <div class="prodname prod">{producto.name}</div>
+          <div class="proddesc prod">DESCRIPCION: {producto.description}</div>
+          <div class="prodnow prod">AHORA: ${producto.wholesale_price}</div>
+          <div class="prodantes prod">ANTES: ${producto.price}</div>
+          <div class="prodnphoto prod"><img class="prodimg" src={producto.photo_url}/></div>
+          <div class="prodsrock prod">STOCK: {producto.stock}</div>
+          <div class="prodsales prod">VENTAS: {producto.sales}</div>
+          <div class="prodnew prod">CREADO: {producto.date_add}</div>
+          <div class="produpdt prod">UPDATE: {producto.date_upd}</div>
+          <div class="prodbrait prod">BRAITEFK: {producto.bra_ite_fk}</div>
+          <button class="" onClick={comprar}>Comprar</button>
+          
+          {mensaje}
+      </div>
+  )
 }
-
-   render(){
-
-        return(
-            <div class="card">
-                <div class="prodid prod">ID: {this.props.producto.id}</div>
-                <div class="prodname prod">{this.props.producto.name}</div>
-                <div class="proddesc prod">DESCRIPCION: {this.props.producto.description}</div>
-                <div class="prodnow prod">AHORA: ${this.props.producto.wholesale_price}</div>
-                <div class="prodantes prod">ANTES: ${this.props.producto.price}</div>
-                <div class="prodnphoto prod"><img class="prodimg" src={this.props.producto.photo_url}/></div>
-                <div class="prodsrock prod">STOCK: {this.props.producto.stock}</div>
-                <div class="prodsales prod">VENTAS: {this.props.producto.sales}</div>
-                <div class="prodnew prod">CREADO: {this.props.producto.date_add}</div>
-                <div class="produpdt prod">UPDATE: {this.props.producto.date_upd}</div>
-                <div class="prodbrait prod">BRAITEFK: {this.props.producto.bra_ite_fk}</div>
-                <button class=""  onClick={this.comprar}>Ver Detalle</button>
-            </div>
-        )
-   }
-}
-
 export default Producto;
