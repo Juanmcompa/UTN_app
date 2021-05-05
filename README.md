@@ -1,3 +1,3 @@
 UTN entrega
 
-Entrar: <a href="utn_app/index.html">aquí</a>
+Entrar: <a href="/public/index.html">aquí</a>
